@@ -1,0 +1,17 @@
+<!-- template/registration/login.html -->
+
+{% extends 'betting.html' %} {% load crispy_forms_tags %} {% block title %} Log In {% endblock title %} {% block content %}
+<style>
+    #merijaan {
+        color: black;
+        background: yellow;
+        border-radius: 1vw;
+    }
+</style>
+<h2>Log In</h2>
+
+<form action="" method="POST">
+    {% csrf_token %} {{ form.as_p }}
+    <button id="merijaan" class="btn btn-primary" type="submit">Log In</button>
+</form>
+{% endblock content %}

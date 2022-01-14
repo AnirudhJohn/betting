@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@media only screen and (max-width: 320px) {
+    body {
+        font-size: 2em;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: slideBg 8s linear infinite 0s;
+    animation-timing-function: step-end;
+    background-image: url('../images/c.jpg');
+}
+
+@keyframes slideBg {
+    0% {
+        background-image: url('../images/a.jpg');
+    }
+    25% {
+        background-image: url('../images/b.jpg');
+    }
+    50% {
+        background-image: url('../images/c.jpg');
+    }
+    75% {
+        background-image: url('../images/d.jpg');
+    }
+    100% {
+        background-image: url('../images/e.jpg');
+    }
+}
+
+
+/* image galery */
+
+.main {
+    text-align: center;
+}
+
+.helper {
+    color: aliceblue;
+    font-family: 'Arvo', serif;
+    padding-left: 420px;
+    /* padding-bottom: 225px; */
+}
+
+
+/* text under moto  */
+
+
+/* navbar content  */
+
+.navelement:hover {
+    background: black;
+    font-size: 120%;
+    padding: 6px;
+    width: 20px;
+    height: 5px;
+    border-radius: 10px;
+}
+
+
+/* logo */
+
+#logo {
+    background-color: black;
+    padding: 8px;
+    width: 20px;
+    height: 5px;
+    border-radius: 10px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+/* content */
+
+.content {
+    color: aliceblue;
+    padding: 50px;
+}
+
+
+/* stagin area  */
+
+
+/* signup  */
+
+.footup {
+    background-image: url('../images/vector1.png');
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+.middle {
+    padding: 0;
+    background-image: url('../images/4.jpg');
+    background-size: cover;
+}
